@@ -20,17 +20,18 @@ class Tempel_model {
   }
 
   public function add($data, $rand_str) {
-    // dd($data);
+    $expired_at = strtotime(sekarang()) + 604800;
     $query = "INSERT INTO $this->table
                     VALUES
-                  ('', :tempel_title, :tempel_text, :tempel_param, :created_at, :expired_at)";
+                  ('', :tempel_title, :tempel_text, :tempel_style, :tempel_param, :created_at, :expired_at)";
 
     $this->db->query($query);
     $this->db->bind('tempel_title', htmlspecialchars($data['tempel_title'], true));
     $this->db->bind('tempel_text', htmlspecialchars($data['tempel_text'], true));
+    $this->db->bind('tempel_style', htmlspecialchars($data['tempel_style'], true));
     $this->db->bind('tempel_param', $rand_str);
     $this->db->bind('created_at', sekarang());
-    $this->db->bind('expired_at', strtotime(date('Y-m-d H:i:s')) + 604800);
+    $this->db->bind('expired_at', date('Y-m-d H:i:s',$expired_at));
 
     $this->db->execute();
 

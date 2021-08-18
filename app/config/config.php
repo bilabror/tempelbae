@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL', 'http://localhost:8000/tempelbae/');
+define('BASEURL', 'http://localhost/tempelbae/');
 
 // DB
 define('DB_HOST', 'localhost');

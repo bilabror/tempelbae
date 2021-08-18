@@ -45,64 +45,24 @@
           <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
             aria-haspopup="false" aria-expanded="false">
             <i class="mdi mdi-bell-outline nav-icon"></i>
-            <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+            <span class="badge badge-danger badge-pill noti-icon-badge">1</span>
           </a>
           <div class="dropdown-menu dropdown-menu-right dropdown-lg">
             <!-- item-->
             <h6 class="dropdown-item-text">
-              Notifications (258)
+              Notifications
             </h6>
-            <div class="slimscroll notification-list">
-              <!-- item-->
-              <a href="javascript:void(0);" class="dropdown-item notify-item active">
-                <div class="notify-icon bg-success">
-                  <i class="mdi mdi-cart-outline"></i>
-                </div>
-                <p class="notify-details">
-                  Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small>
-                </p>
-              </a>
-              <!-- item-->
-              <a href="javascript:void(0);" class="dropdown-item notify-item">
-                <div class="notify-icon bg-warning">
-                  <i class="mdi mdi-message"></i>
-                </div>
-                <p class="notify-details">
-                  New Message received<small class="text-muted">You have 87 unread messages</small>
-                </p>
-              </a>
-              <!-- item-->
-              <a href="javascript:void(0);" class="dropdown-item notify-item">
-                <div class="notify-icon bg-info">
-                  <i class="mdi mdi-martini"></i>
-                </div>
-                <p class="notify-details">
-                  Your item is shipped<small class="text-muted">It is a long established fact that a reader will</small>
-                </p>
-              </a>
-              <!-- item-->
-              <a href="javascript:void(0);" class="dropdown-item notify-item">
-                <div class="notify-icon bg-primary">
-                  <i class="mdi mdi-cart-outline"></i>
-                </div>
-                <p class="notify-details">
-                  Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small>
-                </p>
-              </a>
+            <div class="notification-list">
               <!-- item-->
               <a href="javascript:void(0);" class="dropdown-item notify-item">
                 <div class="notify-icon bg-danger">
                   <i class="mdi mdi-message"></i>
                 </div>
                 <p class="notify-details">
-                  New Message received<small class="text-muted">You have 87 unread messages</small>
+                  Dirgahayu Indonesia 76<small class="text-muted">Indonesia Maju</small>
                 </p>
               </a>
             </div>
-            <!-- All-->
-            <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
-              View all <i class="fi-arrow-right"></i>
-            </a>
           </div>
         </li>
 
@@ -113,12 +73,7 @@
             <span class="ml-1 nav-user-name hidden-sm"> <i class="mdi mdi-chevron-down"></i> </span>
           </a>
           <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
-            <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
-            <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
-            <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+            <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Login</a>
           </div>
         </li>
       </ul>
@@ -183,36 +138,11 @@
 
         <ul class="metismenu left-sidenav-menu" id="side-nav">
 
-          <li class="menu-title">Main Menu</li>
+          <li class="menu-title">Menu</li>
 
           <li>
-            <a href="javascript: void(0);"><i class="mdi mdi-monitor"></i><span>Dashboards</span><span class="badge badge-danger badge-pill float-right">9+</span></a>
-            <ul class="nav-second-level" aria-expanded="false">
-              <li><a href="index.html">Dashboard 1</a></li>
-              <li><a href="index-2.html">Dashboard 2</a></li>
-            </ul>
+            <a href="javascript: void(0);"><i class="mdi mdi-monitor"></i><span>Home</span></a>
           </li>
-
-          <li>
-            <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>App</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
-            <ul class="nav-second-level" aria-expanded="false">
-              <li><a href="app-chat.html"><span>Chat</span></a></li>
-              <li><a href="app-calendar.html"><span>Calendar</span></a></li>
-
-              <li>
-                <a href="javascript: void(0);">ECommerce <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
-                <ul class="nav-second-level" aria-expanded="false">
-                  <li><a href="app-ecommerce-product.html">Product</a></li>
-                  <li><a href="app-ecommerce-product-list.html">Product List</a></li>
-                  <li><a href="app-ecommerce-product-detail.html">Product Detail</a></li>
-                  <li><a href="app-ecommerce-cart.html">Cart</a></li>
-                  <li><a href="app-ecommerce-checkout.html">Checkout</a></li>
-                </ul>
-              </li>
-              <li><a href="app-contact-list.html"><span>Contact List</span></a></li>
-            </ul>
-          </li>
-
         </ul>
       </div>
       <!-- end left-sidenav-->
@@ -230,37 +160,37 @@
                 <div class="card-body">
                   <h4 class="mt-0 header-title">TempelBae</h4>
                   <p class="text-muted mb-4">
-                    Custom stylr example.
+                    Silahkan tulis atau tempel kode anda disini
                   </p>
                   <form class="form" method="post" action="<?= BASEURL; ?>paste/add">
                     <div class="row">
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label for="username">Title</label>
+                          <label for="tempel_title">Name / Title</label>
                           <input type="text" class="form-control" id="tempel_title" name="tempel_title" required="">
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label for="exampleFormControlSelect1">style code</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                          <label for="tempel_style">style code</label>
+                          <select class="form-control" id="tempel_style">
+                            <option value="text">NONE</option>
+                            <option value="bash">BASH</option>
+                            <option value="php">PHP</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">JAVASCRIPT</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label for="exampleFormControlSelect1">Expired Code</label>
+                          <label for="expired_at">Expired Code</label>
                           <select class="form-control" id="expired_at" name="expired_at">
-                            <option>1 Hour</option>
-                            <option>1 Day</option>
-                            <option>1 Week</option>
-                            <option>1 Mounth</option>
-                            <option>1 Year</option>
+                            <option value="3600">1 Hour</option>
+                            <option value="86400">1 Day</option>
+                            <option value="604800">1 Week</option>
+                            <option value="2592000">30 Day</option>
                           </select>
                         </div>
                       </div>

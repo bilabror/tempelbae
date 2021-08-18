@@ -189,30 +189,9 @@
             <a href="javascript: void(0);"><i class="mdi mdi-monitor"></i><span>Dashboards</span><span class="badge badge-danger badge-pill float-right">9+</span></a>
             <ul class="nav-second-level" aria-expanded="false">
               <li><a href="index.html">Dashboard 1</a></li>
-              <li><a href="index-2.html">Dashboard 2</a></li>
-              <li><a href="index-3.html">Dashboard 3</a></li>
             </ul>
           </li>
 
-          <li>
-            <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>App</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
-            <ul class="nav-second-level" aria-expanded="false">
-              <li><a href="app-chat.html"><span>Chat</span></a></li>
-              <li><a href="app-calendar.html"><span>Calendar</span></a></li>
-
-              <li>
-                <a href="javascript: void(0);">ECommerce <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
-                <ul class="nav-second-level" aria-expanded="false">
-                  <li><a href="app-ecommerce-product.html">Product</a></li>
-                  <li><a href="app-ecommerce-product-list.html">Product List</a></li>
-                  <li><a href="app-ecommerce-product-detail.html">Product Detail</a></li>
-                  <li><a href="app-ecommerce-cart.html">Cart</a></li>
-                  <li><a href="app-ecommerce-checkout.html">Checkout</a></li>
-                </ul>
-              </li>
-              <li><a href="app-contact-list.html"><span>Contact List</span></a></li>
-            </ul>
-          </li>
 
         </ul>
       </div>
@@ -221,19 +200,13 @@
       <!-- Page Content-->
       <div class="page-content">
         <div class="container-fluid">
-
-          <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true"><i class="mdi mdi-close"></i></span>
-            </button>
-            <strong>Berhasil!</strong> silahkan <a>buat akun</a> agar dapat mengedit dan menghapus postingan.
-          </div>
+          <?php Flasher::flash(); ?>
           <div class="row">
             <div class="col-lg-12">
 
               <div class="card">
                 <div class="card-body">
-                  <h4 class="mt-0 header-title">Clipboard Tempel Bae</h4>
+                  <h4 class="mt-0 header-title">Clipboard TempelBae</h4>
                   <pre id="clipboardParagraph" class="border p-3"><?= $data['tempel']['tempel_text'] ?></pre>
                   <div class="mt-3">
                     <button type="button" class="btn btn-info btn-clipboard" data-clipboard-action="copy" data-clipboard-target="#clipboardParagraph"><i class="far fa-copy mr-2"></i>Copy</button>
