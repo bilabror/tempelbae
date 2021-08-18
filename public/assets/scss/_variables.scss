@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
+
+// Color variables
+
+$white:                     #ffffff;
+$primary:                   #5766da;
+$secondary:                 #e2e2f1;
+$success:                   #1ecab8;
+$info:                      #00bcd4;
+$warning:                   #fbb624;
+$danger:                    #f93b7a;
+$purple:                    #7043c1;
+$pink:                      #ec408f;
+$muted:                     #98a6ad;
+$dark:                      #2f394e;
+$light:                     #f8f9fa;
+
+// Gray Colors
+$gray-100:                  #f8f9fa;
+$gray-200:                  #e9ecef;
+$gray-300:                  #dee2e6;
+$gray-400:                  #ced4da;
+$gray-500:                  #a8a8b1;
+$gray-600:                  #6c757d;
+$gray-700:                  #5d5b6f;
+$gray-800:                  #343a40;
+$gray-900:                  #23222f;
+
+
+
+// Body Background
+$account-body:              #ffffff;
+$bg-body:                   #f2f5f7;
+
+// Topbar
+$topbar-height:               70px;
+$bg-navbar:                 #ffffff; 
+$bg-logo:                   #23222f;
+
+$bg-card:                   #ffffff;
+
+// Left-sidebar
+$bg-leftbar:                #ffffff;
+$leftbar-width:               270px;
+$leftbar-width-collapsed:     70px;
+$menu-item-color:           #404656;
+$menu-item-hover-color:     #23222f;
+$menu-sub-item-color:       #676c79;
+$menu-sub-item-hover-color: #23222f;
+
+// Font variables
+$font-primary:                'Roboto', sans-serif;
+
+// Font Base
+$font-size-base:              14px;
+
+// Shadow
+$shadow:                      0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+$shadow-lg:                   0 0 24px 0 rgba(0, 0, 0, 0.15), 0 1px 0 0 rgba(0, 0, 0, 0.1);

@@ -1,0 +1,19 @@
+//
+// Grid
+// 
+
+
+.grid-col{
+  div{
+      span{
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-bottom: 15px;
+          background: $gray-100;
+          border: 1px solid;
+          border-color: $gray-200;
+          display: block;
+          text-align: center;
+      }
+  }
+}

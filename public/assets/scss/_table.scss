@@ -1,0 +1,189 @@
+//
+// Table
+// 
+
+
+th {
+    font-weight: 500;
+  }
+  
+  .table-bordered {
+      thead {
+          background-color: $gray-100;
+          td,
+          th {
+              font-weight: 500;
+          }
+      }
+  }
+  
+  .table-striped {
+      tbody {
+          tr:nth-of-type(odd) {
+              background-color: transparent;
+          }
+          tr:nth-of-type(even) {
+              background-color: rgba($gray-100, .4);
+          }
+      }
+  }
+
+
+  
+  .table {
+      thead tr th {
+          font-weight: 500;
+          color: $gray-600;
+          font-size: 13px;
+      }
+      td {
+          vertical-align: middle;
+      }
+
+      .thead-light {
+        th {
+          color: $gray-600;
+          background-color: $gray-100;
+          border-color: $gray-200;
+      }
+      }
+  }
+  
+  .table-hover tbody tr:hover {
+      background-color: $gray-100;
+  }
+  
+  .table-dark {
+      thead tr th {
+          background-color: $light;
+          border-top-color: transparent;
+      }
+      tbody>tr>td,
+      th {
+          color: $gray-100;
+          background-color: $dark;
+      }
+  }
+
+  .dataTables_wrapper{
+      &.container-fluid{
+        padding: 0;
+    }
+  }
+  
+  /*== Table Responsive ==*/
+  
+  .table-rep-plugin {
+      .btn-toolbar {
+          display: block;
+      }
+      .btn-default {
+          border-color: rgba($primary, 0.3);
+          background-color: rgba($primary, 0.2);
+          color: $primary;
+          margin-right: 5px;
+          &:focus {
+              color: $primary;
+          }
+      }
+      .btn-default.btn-primary:active,
+      .btn-default.btn-primary:hover,
+      .btn-default.btn-primary:focus {
+          border-color: rgba($primary, 0.3) !important;
+          background-color: rgba($primary, 0.2) !important;
+          color: $primary;
+      }
+      tbody th {
+          font-size: 14px;
+          font-weight: normal;
+      }
+
+      table.focus-on tbody tr.focused th, 
+      table.focus-on tbody tr.focused td {
+        background-color: $primary;
+        color: $white;
+    }
+  }
+  
+  /* Sticky Header */
+  .fixed-solution .sticky-table-header {
+    top: $topbar-height !important;
+  }
+
+/*====Footable table====*/
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+    }
+    .open>.dropdown-menu {
+      display: block;
+  }
+  
+  .footable-filtering-external ul.dropdown-menu>li>a.checkbox input[type=checkbox], 
+  table.footable>thead>tr.footable-filtering>th ul.dropdown-menu>li>a.checkbox input[type=checkbox] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 5px;
+  }
+  
+  .footable-filtering-external ul.dropdown-menu>li>a.checkbox>label, 
+  table.footable>thead>tr.footable-filtering>th ul.dropdown-menu>li>a.checkbox>label {
+    display: block;
+    padding-left: 30px;
+  }
+  td.footable-sortable > span.fooicon, 
+  th.footable-sortable > span.fooicon { 
+    right: auto !important; 
+    padding-left: 5px; 
+  }
+  
+  
+  /*====jsgrid table====*/
+  
+  .jsgrid {
+    height: auto !important;
+  }
+  .jsgrid-edit-row > .jsgrid-cell, 
+  .jsgrid-filter-row > .jsgrid-cell, 
+  .jsgrid-grid-body, .jsgrid-grid-header, 
+  .jsgrid-header-row > .jsgrid-header-cell, 
+  .jsgrid-insert-row > .jsgrid-cell {
+    background: inherit;
+    border-color: $gray-200;
+    height: auto !important;
+    overflow: auto;
+  }
+  .jsgrid-cell {
+    padding: 1.5em;
+  }
+  .jsgrid-alt-row>.jsgrid-cell {
+    background: transparent;
+  }
+  .jsgrid-cell input,
+  .jsgrid-cell select{
+      border:1px solid $gray-200;
+      box-shadow: none;
+      outline: 0 none;
+      padding: 8px;
+  }
+  .jsgrid-header-row{
+    font-weight: 300 !important;
+    color: $gray-800;
+    background-color: $light;
+  }
+  .jsgrid-selected-row>.jsgrid-cell {
+    background: $gray-100;
+    border-color: $gray-200;
+  }
+  .jsgrid-align-right{
+    text-align: center;
+  }
+
+  .jsgrid-header-sortable{
+      text-align: center;
+  }
+
+  .jsgrid-pager-container{
+    margin-top: 16px;
+  }

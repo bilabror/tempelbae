@@ -1,0 +1,222 @@
+
+//
+// Left Sidenav
+// 
+
+.page-wrapper {
+   
+    .page-wrapper-inner{
+        background-color:$bg-body;
+        padding: 0 80px;
+    }
+}
+
+.page-content {
+    width: 100%;
+    position: relative;
+    min-height: calc(100vh - #{$topbar-height});
+    padding: 0 10px 60px;
+    margin-top: -70px;
+
+}
+
+.left-sidenav {
+    min-width: $leftbar-width;
+    max-width: $leftbar-width;
+    background-color: $white;
+    min-height: calc(100vh - #{$topbar-height});
+    box-shadow: $shadow;
+    transition: .3s;
+    padding: 22px 0;
+    margin-top: -70px;
+    border-radius: 3px;
+}
+
+.left-sidenav-menu {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+        list-style: none;
+        display: block;
+        width: 100%;
+
+        > a {
+            display: block;
+            padding: 7px 20px;
+            color: $menu-item-color;
+            border-left: 3px solid transparent;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                color: $menu-item-hover-color;
+            }
+
+            i {
+                width: 30px;
+                display: inline-block;
+                font-size: 20px;
+                opacity: 0.8;
+                vertical-align: middle;
+                color: $gray-500;
+            }
+        }
+
+        ul {
+            padding: 0 0 0 25px;
+
+            li {
+                > a {
+                    padding: 8px 30px;
+                    color: $menu-sub-item-color;
+                    font-size: 13.5px;
+                    border-left: none;
+
+                    &:hover {
+                        color: $menu-sub-item-hover-color;
+                    }
+                }
+            }
+        }
+
+        &.active {
+            .active .menu-arrow.left-has-menu,
+            .menu-arrow {
+                i {
+                    &:before {
+                        content: "\F140";
+                    }
+                }
+            }
+
+            > a  {
+                color: $menu-item-hover-color;
+                border-left-color: $menu-item-hover-color;
+            }
+        }
+        &.active {
+            .menu-arrow.left-has-menu{
+                i {
+                    &:before {
+                        content: "\F142";
+                    }
+                }
+            }
+        }
+             
+    }
+
+    .menu-title {
+        padding: 8px 30px;
+        color: $gray-500;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .menu-arrow {
+        float: right;
+
+        i {
+            width: 15px;
+        }
+    }
+
+    .badge {
+        margin-top: 4px;
+    }
+}
+
+
+.sidebar-user{
+    text-align: center;
+    padding: 21px 0;
+    position: absolute;
+    top: 70px;
+    z-index: 5;
+    .dropdown-toggle{
+      font-weight: 500;
+    }
+    img{
+      width: 64px;
+      height: 64px;
+      
+      &.img-thumbnail {
+        padding: .25rem;
+        background-color: $gray-500;
+        border: 1px solid $gray-600;
+        border-radius: .25rem;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .online-icon{
+        display: block;
+        position: relative;
+        right: 18px;
+        font-size: 18px;
+    }
+    a{
+        display: inline-block;
+        background-color: rgba($gray-100, .2);
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 14px;
+        border-radius: 50%;
+        &:hover{
+          background-color: rgba($gray-100, .3);
+        }
+      }
+  }
+
+
+@media (min-width: 680px) {
+    .page-wrapper {
+        .page-wrapper-inner{
+            display: flex;
+        }        
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .left-sidenav {
+        position: fixed;
+        top: $topbar-height;
+        overflow-y: auto;
+        z-index: 998;
+        bottom: 0;
+        .left-sidenav-menu{
+            margin-top: $topbar-height;
+        }
+    }
+    .page-content {
+        min-height: 100vh;
+        margin-top: 20px;
+    }
+    .app-search{
+        display: none;
+    }
+    .page-wrapper {
+        .page-wrapper-inner{
+            padding: 0;
+        }
+    }
+    
+    .sidebar-user{
+        display: none;
+    }
+    
+    .page-wrapper-img{
+        min-height: auto;
+    }
+    
+}
+
+// Enlarge menu
+.enlarge-menu {
+    .left-sidenav{
+        display: none;
+    }
+}

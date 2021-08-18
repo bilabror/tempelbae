@@ -1,0 +1,469 @@
+//
+// Ecommerce
+// 
+
+
+// Dashboard
+
+.apexcharts-menu-icon{
+  display: none;
+}
+
+.e-co-product{
+    border: 5px double $gray-200;
+    border-radius: 5px;
+    a{
+      text-align: center !important;
+      padding-top: 30px;
+      img{
+        height: 230px;
+      }
+    }
+  .ribbon-box {
+    position: relative;
+    margin-bottom: 0;
+    padding-top: 30px;
+    .ribbon {
+      position: absolute;
+      color: $white;
+    }
+    .ribbon-label{
+      clear: none;
+      padding: 0 5px;
+      height: 66px;
+      width: 66px;
+      line-height: 66px;
+      text-align: center;
+      left: 0;
+      top: 0;
+      border-radius: 52% 48% 23% 77% / 44% 68% 32% 56%;
+      font-weight: 500;
+    }
+  }
+  &:hover{
+    .wishlist,
+    .quickview{
+      opacity: 1;
+    }
+    box-shadow: 0px 0px 13px 0px rgba($gray-200, 0.1);
+  }
+}
+
+.product-info{
+  .product-title{
+    font-size: 15px;
+    font-weight: 500;
+    color: $gray-600;
+  }
+  .product-price{
+    color: $gray-800;
+    font-weight: 600;
+    padding: 5px 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    span{
+      color: $gray-500;
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
+  .product-review{
+    li{
+      margin-right: 0;
+      i{
+        font-size: 16px;
+      }
+    }
+  }
+    .wishlist,
+    .quickview{
+      opacity: 0;
+      transition: all .3s ease-out;
+    }
+}
+.btn-cart{
+  border-color:$gray-300;
+  background-color: $gray-100;
+  color: $gray-700;
+}
+.product-name{
+  font-weight: 500;
+  font-size: 15px;
+  color: $gray-800;
+}
+
+.single-pro-detail{
+  .pro-title{
+    font-weight: 500;
+    color: $gray-700;
+    font-size: 20px;
+  }
+  .custom-border{
+    width: 60px;
+    height: 2px;
+    background-color: $dark;
+  }
+  .product-review{
+    li{
+      margin-right: 0;
+      i{
+        font-size: 18px;
+      }
+    }
+  }
+  .pro-price{
+    color: $primary;
+    font-size: 24px;
+    margin-bottom: 0;
+    span{
+      font-size: 14px;
+      color: $gray-500;
+    }
+  }
+  .quantity{  
+    input {
+      width: 14%;
+      display: inline-flex;      
+      height: calc(24px + 12px + 5px);
+    }
+  }
+  .pro-features{
+    li{
+      line-height: 26px;
+      color: $muted;
+      &::before{
+        content: "\f00c" !important;
+        font-family: 'Font Awesome 5 Free' !important;
+        font-weight: 600;
+        font-size: 12px;
+        color: $success !important;
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+  }
+  .form-check-inline{
+    margin-right: 5px;
+  }
+}
+.pro-order-box{
+  padding: 20px;
+  border: 1px solid $gray-200;
+  border-radius: 3px;
+  background-color: lighten($gray-100, 5%);
+  box-shadow: 0px 0px 13px 0px rgba($gray-200,0.05);
+  i{
+    font-size: 28px;
+  }
+}
+
+.single-pro-info-tab{
+  width: 45%;
+  margin: 0 auto;
+  border: 4px double $gray-300;
+  background-color: lighten($gray-100, 5%);
+  padding: 4px;
+  border-radius: 40px;
+  box-shadow: 0 0 12px $gray-100;
+  ul{
+    justify-content: center;
+    position: relative;
+    right: 0;
+    text-align: center;
+    left: 0;
+    margin: 0 auto;
+    .nav-link{
+      color: $gray-700;
+      &.active{
+        background-color: $primary;
+        border: 2px solid $white;
+        border-radius: 40px;
+        box-shadow: 0px 0px 0px 1.25px $primary;
+      }
+    }
+  }
+}
+
+.review-box{
+  background-color: rgba($gray-100, 0.4);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: 48px;
+    color: $danger;
+  }
+  .product-review{
+    li{
+      margin-right: 0;
+      i{
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.reviewer{
+  padding-bottom: 12px;
+  margin-top: 8px;
+  border-bottom: 2px dotted $gray-200; 
+  .product-review{
+    li{
+      margin-right: 0;
+      
+    }
+  }
+}
+.total-payment,
+.shopping-cart{
+  .table,
+  table{
+    thead {
+      tr {
+        th{
+          font-size: 15px;
+        }
+      }
+    }    
+    tbody{
+      td{
+        padding: 20px 10px;
+        border-top: 0;
+        border-bottom: 1px solid $gray-200;
+      }
+      tr:last-child td{
+        border-bottom: 0;
+      }
+    }    
+  }
+}
+.total-payment{
+  padding: 20px;
+  border:1px solid $gray-200;
+  background-color: lighten($gray-100, 1%);
+  border-radius: 3px;
+  .payment-title{
+    color: $gray-700;
+    font-weight: 500;
+  }
+}
+.cart-promo{
+  padding: 90px;
+  background-image: url(../images/products/bg-cart.png);
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.jp-card .jp-card-front, 
+.jp-card .jp-card-back{
+  background: $dark !important;
+}
+
+
+
+.billing-nav{
+  .nav{
+    .nav-link{
+      padding: 10px;
+      color: $gray-700;
+      margin-bottom: 10px;
+      font-weight: 500;
+      border: 1px solid $gray-200;
+      margin-right: 5px;
+      width: 100px;
+      height: 80px;
+      &.active{
+        background-color: lighten($gray-100,5%);
+        color: $primary;
+        box-shadow: 0px 0px 13px 0px rgba($gray-200, 0.05);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.c-progress-steps {
+	margin: 0;
+	list-style-type: none;
+	font-family: $font-primary;	
+		li {
+			position: relative;
+			font-size: 14px;
+			color: $gray-400;
+			padding: 16px 0 0 36px;
+				
+				a {
+					color: inherit;
+				}				
+				&.done {
+					color: $success;				
+					&:before {
+						color: $success;
+            content: "\f058";
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 2px solid $success;
+					}
+				}				
+				&.current {
+					color: $warning;
+					font-weight: 500;
+					
+					&:before {
+						color: $warning;
+            content: "\f192";
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 2px solid $warning;
+					}
+				}				
+				&:before {
+					position: absolute;
+					left: 0;
+					font-family: 'Font Awesome 5 Free' !important;
+          font-weight: 600;
+					font-size: 18px;
+					background-color: $white;
+          content: "\f111";
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          text-align: center;
+          border-radius: 50%;
+          border: 2px solid $gray-400;
+					
+					@media all and (max-width: 600px) {
+						top: calc(50% - 8px);
+						font-size: 16px;
+					}
+				}
+		}
+		
+	@media all and (min-width: 600px)  {
+		display: table;
+		list-style-type: none;
+		margin: 20px auto;
+		padding: 0;
+		table-layout: fixed;
+		width: 100%;
+		
+		li {
+			display: table-cell;
+			text-align: center;
+			padding: 0;
+			padding-bottom: 18px;
+			white-space: nowrap;
+			position: relative;
+			border-left-width: 0;
+			border-bottom-width: 4px;
+			border-bottom-style: solid;
+			border-bottom-color: $gray-400;				
+				&.done {
+					border-bottom-color: $success;
+				}				
+				&.current {
+					color: $warning;
+					border-bottom-color: $warning;					
+					&:before {
+						color: $warning;
+						content: "\f192";
+					}
+				}				
+				&:before {
+					bottom: -15px;
+					left: 50%;
+					margin-left: -16px;
+				}
+		}
+	}
+}
+
+.track-report{
+  text-align: center;
+  background-color: lighten($gray-100, 0.5%);
+  h3{
+    color: $gray-700;
+    font-weight: 700;
+  }
+}
+
+.tracking-timeline{
+  .timeline {
+    list-style: none;
+  }
+  .timeline > li {
+    margin-bottom: 60px;
+    .timeline-content{
+      padding-bottom: 30px;
+    }
+  }
+  
+  /* for Desktop */
+  @media ( min-width : 640px ){
+    .timeline > li {
+      overflow: hidden;
+      margin: 0;
+      position: relative;
+    }
+    .timeline-date {
+      font-weight: 500;
+      color: $gray-700;
+      width: 110px;
+      float: left;
+      margin-top: 20px;
+    }
+    .timeline-content {
+      width: 75%;
+      float: left;
+      border-left: 3px solid rgba($info, 0.1);
+      padding-left: 28px;
+      .track-info{
+        background-color: lighten($primary, 39%);
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 8px;
+        h5{
+          font-size: 16px;
+          color: $gray-700;
+          font-weight: 600;
+        }
+      }
+      
+      
+      &::after{
+        content: '';
+        position: absolute;
+        top: 22px;
+        left: 17%;
+        width: 0;
+        height: 0;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        border-right: 14px solid lighten($primary, 38%);
+      }
+    }
+    .timeline-content:before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: $info;
+      border: 4px solid $white;
+      box-shadow: 0px 0px 0px 1.25px $info;
+      position: absolute;
+      left: 105px;
+      top: 24px;
+      border-radius: 100%;
+    }
+  }
+}

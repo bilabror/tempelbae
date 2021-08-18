@@ -1,0 +1,169 @@
+//
+// Dashboard
+// 
+
+
+
+.dash-info-box{
+    .chart-gutters {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+}
+.icon-info{
+    i{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+        font-size: 26px;
+        z-index: 5;        
+    }
+}
+
+.carousel-bg-img{
+    background-image: url('../images/banner2.png');
+    background-position: center center;
+    background-size: cover;
+   background-repeat: repeat;
+}
+
+
+.dash-info-carousel{
+    .carousel-control-prev,
+  .carousel-control-next{
+        width: 30px;
+        height: 30px;
+        background-color: $gray-100;
+        border-radius:50%;
+        opacity: 1;
+        &:hover {
+          opacity: .9;
+        }
+  }
+  .carousel-control-prev {
+    left: auto;
+    right: 38px;
+    top:0;
+    .carousel-control-prev-icon {
+      background-image: none;
+    }
+    &:after {        
+        content: '\55';
+        font-family: "dripicons-v2" !important;
+        font-size: .875rem;
+        color: $gray-700;
+        line-height: 1.875rem;
+        margin-right: 0.48rem;
+    }
+  }
+  .carousel-control-next {
+    left: auto;
+    right: 0;
+    top:0;
+    .carousel-control-next-icon {
+      background-image: none;
+    }
+    &:after {        
+        content: '\56';
+        font-family: "dripicons-v2" !important;
+        font-size: .875rem;
+        color: $gray-700;
+        line-height: 1.875rem;
+        margin-right: 0.48rem;
+    }
+  }
+}
+
+/*==Map==*/
+
+.dashboard-map {
+  height: 400px;
+}
+
+/*==Table==*/
+
+
+.new-user {
+  table {
+    td {
+      img {
+        width: 40px;
+      }
+      .img-flag {
+        width: 22px;
+      }
+    }
+  }
+  &.order-list{
+    table {
+      td {
+        border-top: none;
+      }
+    }
+  }
+}
+
+/*== Gradient color ==*/
+
+.bg-gradient1 {
+  background-image: linear-gradient(120deg,#00e795 0,#0095e2 100%);
+}
+.bg-gradient2{
+  background-image: linear-gradient(120deg,#7b78c9 0,#60c6f3 100%);
+}
+.bg-gradient3{
+  background-image: linear-gradient(120deg,#f6d365 0,#ff7850 100%);
+}
+.card-icon {
+  text-align: right;
+  color: rgba($white, 0.8);
+  position: absolute;
+  display: inline-block;
+  right: -14px;
+  font-size: 108px;
+  overflow: hidden;
+  top: -40px;
+  opacity: 0.2;
+}
+
+.review-data{
+  font-size: 50px;
+  font-weight: 300;
+  span{
+    font-size: 13px;
+    color: $muted;
+  }
+}
+
+/*=================dashboard-2====================*/
+
+.xender-visits{
+  text-align: center;
+  i{
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 26px;
+    margin-bottom: 20px;
+    background-color: $white;
+    color: $info;
+    box-shadow: 0px 0px 10px 1.5px rgba($gray-300, 0.2);
+    &.female{
+      color: darken($secondary, 6%);
+    }
+  }
+}
+
+.dash-social{
+  .table{
+    td{
+      padding: 8px;
+    }
+  }
+}

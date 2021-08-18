@@ -1,0 +1,53 @@
+//
+// Form Wizard
+// 
+
+.sw-theme-default{
+  box-shadow: none;
+  border: 5px solid $gray-100;
+}
+.sw-theme-default > ul.step-anchor > li.active > a{
+  color: $info !important;
+}
+
+.sw-theme-default > ul.step-anchor > li > a::after{
+  background-color: $info;
+}
+
+#smart_wizard_circles {
+  .nav-tabs{
+    i{
+      font-size: 18px;
+    }
+  }
+}
+
+
+.sw-theme-circles > ul.step-anchor > li > a{
+  border-radius: 25%;
+  height: 62px;
+  width: 62px;
+  padding: 20px 0;
+}
+
+.sw-theme-circles > ul.step-anchor:before{
+  height: 0;
+}
+
+.sw-theme-circles > ul.step-anchor > li > a > small{
+  bottom: -28px;
+}
+.sw-theme-circles > ul.step-anchor{
+  margin-bottom: 48px;
+}
+.sw-theme-arrows,
+.sw-circle-content{
+  border: 5px solid $gray-100;
+  border-radius: 5px;
+  min-height: 300px !important;
+}
+.sw-theme-arrows > .sw-toolbar-bottom{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

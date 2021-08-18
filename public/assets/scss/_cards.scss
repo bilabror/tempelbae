@@ -1,0 +1,53 @@
+//
+// Cards
+// 
+
+.card {
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: $shadow;
+  border-radius: 3px;
+}
+
+.card-primary{
+  background-color: $primary;
+}
+
+.card-secondary{
+  background-color: $secondary;
+}
+
+.card-success{
+  background-color: $success;
+}
+
+.card-warning{
+  background-color: $warning;
+}
+
+.card-info{
+  background-color: $info;
+}
+
+.card-danger{
+  background-color: $danger;
+}
+
+.card-dark{
+  background-color: $dark;
+}
+
+.card-light{
+  background-color: $light;
+  color: $gray-500;
+}
+
+.card-pink{
+  background-color: $pink;
+}
+
+.card-purple{
+  background-color: $purple;
+}
+
+

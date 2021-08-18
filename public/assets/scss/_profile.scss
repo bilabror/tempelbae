@@ -1,0 +1,201 @@
+//
+// Profile
+// 
+
+
+.fro_profile {  
+  .fro_profile-main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    .fro_profile-main-pic {
+      position: relative;
+      max-width: 128px;
+      max-height: 128px;
+      margin-right: 24px;
+      
+      .fro-profile_main-pic-change {
+        cursor: pointer;
+        background-color: $primary;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        bottom: 4px;
+        right: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        box-shadow: 0px 0px 20px 0px rgba($gray-100,0.05);
+        i{
+          transition: all 0.3s;
+          color: $white;
+          font-size: 16px;
+        }
+      }
+    }
+    .fro_profile_user-detail{
+      .fro_user-name{
+        font-size: 24px;
+        font-weight: 600;
+        color: $gray-700;
+        margin-bottom: 6px;
+      }
+      .fro_user-name-post{
+        color: $muted;
+      }
+    }
+  }  
+}
+
+
+.seling-report{
+  align-items: center;
+  justify-content: center;
+  .seling-data{
+    font-size: 24px;
+    font-weight: 600;
+    color: $gray-700;
+  }
+  .seling-data-detail{
+    color: $gray-700;
+    margin-bottom: 0;
+  }
+}
+
+
+// Activity
+
+.activity {
+  position: relative;
+  border-left: 1px solid $gray-100;
+  margin-left: 16px;
+  .item-info {
+    margin-left: 30px;
+    margin-bottom: 23px;
+    h5{
+      font-weight: 400;
+    }
+  }
+  .img-activity,
+  i{
+    border: 1px solid $gray-100;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 50%;
+    position: absolute;
+    left: -18px;
+    color: $primary;
+    background-color: $gray-100;
+    font-size: 20px;
+    margin-top: 6px;
+    box-shadow: 0px 0px 0px 0.5px  $gray-100;
+  }
+}
+
+.activity-meeting{
+  margin-top: 40px;
+  .meeting-title{
+    ul{
+      li{
+        line-height: 34px;
+        color: $gray-700;
+      }
+    }
+  }
+}
+
+
+
+#profile-settings {
+  .dropify-wrapper{
+    width: 16%;
+    height: 164px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.wrap{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+  background: $gray-100;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.jctkr-label{
+  height: 60px;
+  padding: 0 17px;
+  line-height: 60px;
+  background: rgba($primary,0.9);
+  font-weight: 600;
+  font-size: 16px;
+  color: $white;
+  cursor: default;
+}
+.jctkr-label:hover{
+  background: $primary;
+  color: $white;
+}
+[class*="js-conveyor-"] ul{
+  display: inline-block;
+  opacity: 0.5;
+}
+[class*="js-conveyor-"] ul li{
+  padding: 0 15px;
+  line-height: 35px;
+  font-size: 16px;
+}
+
+.new-product{
+  .new-product-img{
+    box-shadow: 0px 0px 0px 0.25px $gray-300;
+  }
+}
+
+.profile-nav{
+  .nav{
+    .nav-link{
+      padding: 10px;
+      color: $gray-700;
+      margin-bottom: 10px;
+      font-weight: 500;
+      &.active{
+        background-color: rgba($primary,0.05);
+        color: $primary;
+      }
+    }
+  }
+}
+
+.profile-card {
+  .profile-socials {
+    a {
+      i {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        border-radius: 50%;
+      }
+    }
+  }
+  .socials-data{
+    h3{
+      color: $gray-700;
+      font-family: $font-primary;
+      font-size: 18px;
+    }
+  }
+  .profile-card-user{
+    margin-top: -56px;
+  }
+}

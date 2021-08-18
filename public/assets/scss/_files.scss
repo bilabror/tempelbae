@@ -1,0 +1,31 @@
+//
+// Files
+//
+
+.file-category{
+  width: 100%;
+  .file-category-block{
+    text-align: center;
+    margin-right: 20px;
+    .file-category-folder{
+      border-bottom:2px solid transparent;
+      padding: 10px 20px !important;
+      border-radius: 18px;
+      &.active{
+        border-bottom:2px solid;
+      }
+      i{
+        display: block;
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+
+.category-icon{
+  i{
+    font-size: 200px;
+    color: $gray-100;
+  }
+}

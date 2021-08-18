@@ -1,0 +1,35 @@
+//
+// FAQ
+// 
+
+
+#accordionExample-faq {
+  .card-header {
+    background-color: $gray-100;
+    padding: 6px 12px;
+    h5 button::before {
+      content: "\f062";
+      font-family: 'Font Awesome 5 Free' !important;
+      font-weight: 600;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      transition: -webkit-transform .25s;
+      transition: transform .25s;
+      transition: transform .25s, -webkit-transform .25s;
+      transform: rotate(180deg);
+      color: $primary;
+      font-size: 14px;
+      background-color: rgba($primary, 0.15);
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+    }
+    h5 button.collapsed::before {
+      content: "\f128";
+      transform: rotate(0deg);
+      font-size: 14px;
+    }
+  }
+}

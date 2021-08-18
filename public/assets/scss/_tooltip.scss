@@ -1,0 +1,55 @@
+//
+// Tooltip
+// 
+
+
+
+.tippy-tooltip{
+  .light-theme[data-animatefill] {
+    background-color: transparent;
+  }  
+}
+
+.light-theme {
+  color: $gray-700;
+  box-shadow: 0 0 20px 4px $gray-200, 0 4px 80px -8px $gray-300, 0 4px 4px -2px $gray-200;
+  background-color: $white;
+  .tippy-backdrop {
+    background-color: $white
+  }
+  .tippy-roundarrow {
+    fill: $white
+  }
+}
+.gradient-theme {
+  font-weight: 700;
+  .tippy-backdrop {
+    background: radial-gradient(circle at 67% 60%, $primary, $info, $purple,$danger)
+  }
+}
+
+.tippy-popper[x-placement^=top] .tippy-tooltip.light-theme .tippy-arrow {
+  border-top: 7px solid $white;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme .tippy-arrow {
+  border-bottom: 7px solid $white;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent
+}
+
+.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme .tippy-arrow {
+  border-left: 7px solid $white;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent
+}
+
+.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme .tippy-arrow {
+  border-right: 7px solid $white;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent
+}
+
+
