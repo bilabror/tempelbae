@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Waktu pembuatan: 20 Agu 2021 pada 10.11
--- Versi server: 5.6.38
--- Versi PHP: 7.4.3
+-- Host: 127.0.0.1
+-- Generation Time: Aug 20, 2021 at 06:45 AM
+-- Server version: 10.1.25-MariaDB
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -24,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `report`
+-- Table structure for table `report`
 --
 
 CREATE TABLE `report` (
@@ -36,19 +37,10 @@ CREATE TABLE `report` (
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data untuk tabel `report`
---
-
-INSERT INTO `report` (`report_id`, `report_name`, `report_email`, `report_message`, `tempel_param`, `created_at`) VALUES
-(1, 'Wkwk Awokawok', 'wkwkw@wwk.com', 'Emmm', 'HGJTJLH736', '2021-08-20 06:25:14'),
-(2, 'Wkwk Awokawok', 'wkwkw@wwk.com', 'Lapor pak', 'HGJTJLH736', '2021-08-20 06:29:31'),
-(3, 'Wkwk Awokawok', 'wkwkw@wwk.com', 'Ddd', 'HGJTJLH736', '2021-08-20 06:29:53');
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tempel`
+-- Table structure for table `tempel`
 --
 
 CREATE TABLE `tempel` (
@@ -62,17 +54,10 @@ CREATE TABLE `tempel` (
   `expired_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data untuk tabel `tempel`
---
-
-INSERT INTO `tempel` (`tempel_id`, `tempel_title`, `tempel_text`, `tempel_type`, `tempel_param`, `user_id`, `created_at`, `expired_at`) VALUES
-(9, 'Urur', 'Kdkd', '.txt', 'J67NhCLL5I', 0, '2021-08-20 07:38:24', '2021-08-21 07:38:24');
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -84,7 +69,7 @@ CREATE TABLE `user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`user_id`, `user_name`, `user_email`, `user_password`, `user_level`) VALUES
@@ -95,46 +80,43 @@ INSERT INTO `user` (`user_id`, `user_name`, `user_email`, `user_password`, `user
 --
 
 --
--- Indeks untuk tabel `report`
+-- Indexes for table `report`
 --
 ALTER TABLE `report`
   ADD PRIMARY KEY (`report_id`);
 
 --
--- Indeks untuk tabel `tempel`
+-- Indexes for table `tempel`
 --
 ALTER TABLE `tempel`
   ADD PRIMARY KEY (`tempel_id`),
   ADD UNIQUE KEY `tempel_param` (`tempel_param`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `report`
+-- AUTO_INCREMENT for table `report`
 --
 ALTER TABLE `report`
-  MODIFY `report_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
+  MODIFY `report_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
--- AUTO_INCREMENT untuk tabel `tempel`
+-- AUTO_INCREMENT for table `tempel`
 --
 ALTER TABLE `tempel`
-  MODIFY `tempel_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
+  MODIFY `tempel_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
+  MODIFY `user_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
