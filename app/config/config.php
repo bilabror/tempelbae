@@ -1,8 +1,11 @@
 <?php
 
-define('BASEURL', 'http://localhost/tempelbae/');
+// set base url
+define('BASEURL', 'http://localhost:8000/tempelbin/');
 
-// DB
+
+
+// DB set
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');

@@ -3,9 +3,9 @@
 
 class Home extends Controller {
 
-  public function index($param = '') {
-    return redirect('paste');
+  public function index() {
+    $data['title'] = 'Home Page - Tempelbin';
+    $this->view('home', $data);
   }
-
 
 }

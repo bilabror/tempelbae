@@ -1,7 +1,7 @@
 <?php
 
-class Tempel_model {
-  private $table = 'tempel';
+class Report_model {
+  private $table = 'report';
   private $db;
 
   public function __construct() {
@@ -19,24 +19,16 @@ class Tempel_model {
     return $this->db->single();
   }
 
-  public function add($data, $rand_str) {
-    $expired_at = strtotime(sekarang()) + (86400 * $data['expired_at']);
+  public function add($data) {
     $query = "INSERT INTO $this->table
                     VALUES
-                  ('', :tempel_title, :tempel_text, :tempel_type, :tempel_param, :user_id, :created_at, :expired_at)";
-    if ($data['tempel_type'] == '.') {
-      $tempel_type = '.txt';
-    } else {
-      $tempel_type = $data['tempel_type'];
-    }
+                  ('', :report_name, :report_email, :report_message, :tempel_param, :created_at)";
     $this->db->query($query);
-    $this->db->bind('tempel_title', htmlspecialchars($data['tempel_title'], true));
-    $this->db->bind('tempel_text', htmlspecialchars($data['tempel_text'], true));
-    $this->db->bind('tempel_type', $tempel_type);
-    $this->db->bind('tempel_param', $rand_str);
-    $this->db->bind('user_id', 0);
+    $this->db->bind('report_name', htmlspecialchars($data['report_name'], true));
+    $this->db->bind('report_email', htmlspecialchars($data['report_email'], true));
+    $this->db->bind('report_message', htmlspecialchars($data['report_message'], true));
+    $this->db->bind('tempel_param', htmlspecialchars($data['tempel_param'], true));
     $this->db->bind('created_at', sekarang());
-    $this->db->bind('expired_at', date('Y-m-d H:i:s', $expired_at));
     $this->db->execute();
     return $this->db->rowCount();
   }
