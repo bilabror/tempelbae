@@ -1,6 +1,8 @@
 <?php
 
-
+/**
+* Main Page
+**/
 class Paste extends Controller {
 
   // page for paste code
@@ -50,7 +52,7 @@ class Paste extends Controller {
     $rand_str = rand_str();
     if ($this->model('Tempel_model')->add($_POST, $rand_str) > 0) {
       Flasher::setFlash(
-        '<strong>Success!</strong> Not a member of Pastebin yet? <a href="'.BASEURL.'register">Sign Up</a>, it unlocks many cool features!.',
+        '<strong>Success!</strong> Not a member of Tempelbin yet? <a href="'.BASEURL.'register">Sign Up</a>, it unlocks many cool features!.',
         'success'
       );
       redirect("paste/{$rand_str}");
@@ -80,7 +82,7 @@ class Paste extends Controller {
   }
 
   // page for clone code
-  public function clone($param = '') {
+  public function clonecode($param = '') {
     if ($param == '') return redirect('paste');
     $data['title'] = 'Clone tempel';
     $tempel_data = $this->model('Tempel_model')->getWhereParam($param);
@@ -143,7 +145,7 @@ class Paste extends Controller {
   }
 
 
-  // page for clone code
+  // page for report code
   public function report($param = '') {
     if ($param == '') return redirect('paste');
 
@@ -172,7 +174,7 @@ class Paste extends Controller {
       if ($tempel_data['expired_at'] < sekarang()) {
         $this->model("Tempel_model")->delete($tempel_data['tempel_id']);
       }
-      $data['tempel_param'] = $tempel_data['tempel_param'];
+      $data['tempel'] = $tempel_data;
       $this->_show('tempel-report', $data);
     } else {
       echo 'not found 404';

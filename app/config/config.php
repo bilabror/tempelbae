@@ -1,7 +1,7 @@
 <?php
 
 // set base url
-define('BASEURL', 'http://localhost:8000/tempelbin/');
+define('BASEURL', 'http://localhost/tempelbin/');
 
 
 

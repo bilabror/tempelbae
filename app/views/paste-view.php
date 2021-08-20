@@ -41,7 +41,7 @@ $embed = '<iframe src="'.$url.'" width="100%" frameborder="0"></iframe>';
             <button type="button" class="btn btn-info btn-clipboard mb-2" data-clipboard-action="copy" data-clipboard-target="#clipboardParagraph"><i class="far fa-copy mr-2"></i>Copy</button>
             <a href="<?=BASEURL.'paste/raw/'.$data['tempel']['tempel_param'] ?>" class="btn btn-primary btn-clipboard mb-2"><i class="far fa-eye mr-2"></i>Raw</a>
             <a href="<?=BASEURL.'paste/download/'.$data['tempel']['tempel_param'] ?>" class="btn btn-success btn-clipboard mb-2"><i class="fas fa-download mr-2"></i>Download</a>
-            <a href="<?=BASEURL.'paste/clone/'.$data['tempel']['tempel_param'] ?>" class="btn btn-warning btn-clipboard mb-2"><i class="fas fa-reply-all mr-2"></i>Clone</a>
+            <a href="<?=BASEURL.'paste/clonecode/'.$data['tempel']['tempel_param'] ?>" class="btn btn-warning btn-clipboard mb-2"><i class="fas fa-reply-all mr-2"></i>Clone</a>
             <button type="button" class="btn btn-danger btn-clipboard mb-2" onclick="window.print(1)"><i class="fas fa-print mr-2"></i>Print</button>
             <a href="<?=BASEURL.'paste/report/'.$data['tempel']['tempel_param'] ?>" class="btn btn-danger btn-clipboard mb-2"><i class="fas fa-exclamation-triangle mr-2"></i>Report</a>
           </div>

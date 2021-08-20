@@ -1,6 +1,8 @@
 <?php
 
-
+/**
+* First Page when open website in browser
+**/
 class Home extends Controller {
 
   public function index() {

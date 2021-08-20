@@ -1,24 +1,29 @@
 <?php
 
-
+/**
+* Controller untuk User Level Admin
+**/
 class Admin extends Controller {
 
   public function __construct() {
     if (!$_SESSION['user_id']) return redirect('auth/login');
   }
 
+// Dashboard Page
   public function index() {
     $data['title'] = 'Dashboard Admin Page';
+    $data['tempel'] = $this->model('Tempel_model')->getAll();
     $this->_show('admin/dashboard', $data);
   }
 
+// Management tempel code
   public function tempelcode() {
     $data['title'] = 'List Tempel Code Page';
     $data['tempel'] = $this->model('Tempel_model')->getAll();
     $this->_show('admin/tempel-code', $data);
   }
 
-  // page for clone code
+  //Action delete tempel code
   public function deletetempel($param = '') {
     if ($param == '') return redirect('paste');
     $data['title'] = 'Delete tempel';
@@ -42,11 +47,10 @@ class Admin extends Controller {
     } else {
       echo 'not found 404';
     }
-
   }
 
 
-
+// Management Report code
   public function reportcode() {
     $data['title'] = 'List Report Code Page';
     $data['report'] = $this->model('Report_model')->getAll();

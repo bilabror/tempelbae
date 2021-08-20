@@ -28,10 +28,10 @@ $embed = '<iframe src="'.$url.'" width="100%" frameborder="0"></iframe>';
             <div class="card-body">
               <h4 class="mt-0 header-title">Report Code Tempel</h4>
               <p class="text-muted mb-4">
-                Report Abuse For Tempel ID: <?= $data['tempel_param'] ?>
+                Report Abuse For Tempel ID: <?= $data['tempel']['tempel_param'] ?>
               </p>
               <form class="" method="post">
-                <input type="hidden" name="tempel_param" id="tempel_param" value="<?=$data['tempel_param'] ?>" />
+                <input type="hidden" name="tempel_param" id="tempel_param" value="<?= $data['tempel']['tempel_param'] ?>" />
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">

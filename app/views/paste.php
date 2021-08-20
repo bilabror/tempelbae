@@ -3,9 +3,9 @@
     <div class="col-lg-12">
       <div class="card">
         <div class="card-body">
-          <h4 class="mt-0 header-title">TempelBae</h4>
+          <h4 class="mt-0 header-title">Tempelbin</h4>
           <p class="text-muted mb-4">
-            Silahkan tulis atau tempel kode anda disini
+            You are currently not logged in, this means you can not edit or delete anything you paste. <a href="#">Sign Up</a> or <a href="<?=BASEURL.'auth/login'?>">Login</a>
           </p>
           <form class="form" method="post" action="<?= BASEURL; ?>paste/add">
             <div class="row">

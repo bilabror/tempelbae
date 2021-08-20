@@ -7,7 +7,7 @@
             <div class="col-8 align-self-center">
               <div class="">
                 <h4 class="mt-0 header-title">Total Tempel</h4>
-                <h2 class="mt-0 font-weight-bold text-dark">40.000</h2>
+                <h2 class="mt-0 font-weight-bold text-dark"><?=count($data['tempel'])?></h2>
                 <p class="mb-0 text-muted">
                   <span class="text-success"><i class="mdi mdi-arrow-up"></i></span> Up From Last yesterday
                 </p>

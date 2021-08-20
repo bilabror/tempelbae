@@ -49,7 +49,7 @@
           <span class="ml-1 nav-user-name hidden-sm"> <i class="mdi mdi-chevron-down"></i> </span>
         </a>
         <div class="dropdown-menu dropdown-menu-right">
-          <?php if (!$_SESSION['user_id']): ?>
+          <?php if (!isset($_SESSION['user_id'])): ?>
           <a class="dropdown-item" href="<?=BASEURL.'auth/login' ?>"><i class="dripicons-exit text-muted mr-2"></i> Login</a>
           <?php else : ?>
           <a class="dropdown-item" href="<?=BASEURL.'auth/logout' ?>"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
